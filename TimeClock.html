@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <center>
+    <div id="j">  </div>
+</center>
+</body>
+<style>
+    #j
+    {
+        margin-top:200px;
+        background-color: rgb(0, 0, 0);
+        width: 390px;
+        height: 120px;
+    border: 1px solid blue;
+color: white;
+    }
+
+</style>
+
+<script>
+      samai();
+        function samai()
+        {
+    let x = new Date();
+    let y = x.getFullYear();
+    let h = x.getHours();
+    let m = x.getMinutes();
+    let s = x.getSeconds();
+
+    if(h>12)
+      {
+        document.getElementById("j").innerHTML = y+ "/" + h+ ":" +m+ ":" +s+":PM";
+      }
+      else
+      {
+        document.getElementById("j").innerHTML = y+ "/"+ h+ ":" +m+ ":" +s+":AM";
+      }
+
+      setTimeout(samai,1000)
+        }
+</script>
+</html>

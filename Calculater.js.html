@@ -1,0 +1,84 @@
+<html>
+     <body>
+        <center>
+        <input id="a">
+        <table border="2">
+<tr>
+      <td> <button onclick="f('1')"> 1 </button> </td>
+      <td> <button onclick="f('2')"> 2 </button> </td>
+      <td > <button onclick="f('3')"> 3 </button> </td>
+      <td> <button onclick="f('+')"> + </button> </td>
+</tr>
+
+<tr>
+   <td>  <button onclick="f('4')"> 4 </button> </td>
+   <td>  <button onclick="f('5')"> 5 </button> </td>
+   <td>  <button onclick="f('6')"> 6 </button> </td>
+   <td>  <button onclick="f('-')"> - </button> </td>
+</tr>
+
+
+<tr>
+   <td> <button onclick="f('7')"> 7 </button> </td>
+   <td> <button onclick="f('8')"> 8 </button> </td>
+   <td> <button onclick="f('9')"> 9 </button> </td>
+   <td> <button onclick="f('*')"> * </button> </td>
+ </tr>
+
+
+
+<tr>
+    <td>  <button onclick="f('0')"> 0 </button> </td>
+    <td> <button onclick="f('.')"> .   </button> </td>
+    <td> <button  onclick="h()"> = </button>  </td>   
+    <td> <button onclick="f('/')"> /   </button> </td>
+</tr>
+
+
+
+<tr>
+ <td colspan="2"> <button  onclick="g()"> clear </button>  </td>
+ <td colspan="2"> <button onclick="f('00')"> 00 </button> </td>
+</tr>
+
+        </table>
+<script>
+    function f(n)
+    {
+        document.getElementById("a").value += n; 
+    }
+    function g()
+    {
+        document.getElementById("a").value = " "; 
+    }
+    function h()
+    {
+       let x = document.getElementById("a").value; 
+               document.getElementById("a").value = eval(x)
+    }
+</script>
+
+
+</center>
+
+
+        <style>
+          
+          tr
+          {
+         
+            height: 30px;
+            
+          }
+          input{
+            width: 107px;
+          }
+          body
+          {
+             margin-top: 200px;
+             background-color: black;
+          }
+
+        </style>
+    </body>
+</html>

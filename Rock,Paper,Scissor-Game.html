@@ -1,0 +1,101 @@
+<html>
+            
+    <body>
+        <select id="a">
+          <option>Rock</option>
+          <option>Paper</option>
+          <option>Scissor</option>
+           </select>
+  
+  
+        <select id="b">
+          <option>Rock</option>
+          <option>Paper</option>
+          <option>Scissor</option>
+       
+  
+        </select>
+  
+  
+        <p id="c"> </p>
+        
+  
+  
+        <button onclick="f()"> click me</button>
+  
+        <script>
+  
+          function f()
+           
+            
+            {
+  
+              let x = document.getElementById("a").value;
+              let y = document.getElementById("b").value;
+
+              
+            
+              if(x=="Rock"&& y=="Scissor")
+              {
+               document.getElementById("c").innerHTML = "Rock"  ;
+              }
+
+              if(x=="Rock" && y=="Paper")
+              {
+               document.getElementById("c").innerHTML = "Paper"  ;
+              }
+
+              if(x=="Rock" && y=="Rock")
+              {
+               document.getElementById("c").innerHTML = "Draw" ;
+              }
+
+
+              
+
+
+
+              if(x=="Paper" && y=="Rock")
+              {
+               document.getElementById("c").innerHTML = "Paper" ;
+              }
+  
+  
+              if(x=="Paper" && y=="Scissor")
+              {
+               document.getElementById("c").innerHTML = "Scissor";
+              }
+  
+              
+              if(x=="Paper" && y=="Paper")
+              {
+               document.getElementById("c").innerHTML = "Draw";
+              }
+  
+
+
+
+
+              if(x=="Scissor" && y=="Paper")
+              {
+               document.getElementById("c").innerHTML = "Scissor";
+              }
+  
+              if(x=="Scissor" && y=="Rock")
+              {
+               document.getElementById("c").innerHTML = "Rock" ;
+              }
+  
+              if(x=="Scissor" && y=="Scissor")
+              {
+               document.getElementById("c").innerHTML = "Draw";
+              }
+  
+                       
+  
+            }
+    
+      </script>
+    
+    </body>
+</html>

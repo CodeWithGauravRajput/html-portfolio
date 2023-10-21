@@ -1,0 +1,100 @@
+<html>
+    <body>
+        <div class="img"><img src="dordesktopnew.webp" width="100%"></div>
+        <div class="img"><img src="ae-desktop.webp" width="100%"></div>
+        <div class="img"><img src="dharohar-desktop.webp" width="100%"></div>
+        
+        <button id ="but" onclick="f(-1)"><</button>
+        <button id ="but" class="next" onclick="f(1)">></button>
+
+        <section id="a">
+          <div id="cp"><img src="profile-picture.jpeg" width="500px"></div>
+          <div id="b">
+              <h1>The mountain</h1>
+              <p>jnlwxbkauxbixqkwaubxqbxqiw<br>skecubewuboqwibceowiboibcewbeowiecb
+              <br>secxugwbecoiwebcowciwec<br>ecohwucpwicnoewcnpowec
+              </p>
+              <button>Click me</button>
+          </div>
+      </section>
+      <section>
+          <img src="dharohar-desktop.webp" width="100%">
+      </section> 
+        <style>
+             #a {
+                display: flex;
+                justify-content: space-around;
+            }
+            #b
+            {
+                margin-top: 150px;
+            }
+
+            #cp img
+            {
+                transform: scale(1.1);
+                box-shadow: 0px 0px 12px 12px black;
+                transition: 2s;
+            }
+
+            #cp img:hover
+            {
+                transform: scale(0.9);
+            }
+
+          #but
+            {
+                position: absolute;
+                width: 30px;
+                height: 60px;
+                 font-size: 30px;
+                background-color: rgb(84, 79, 79);
+                top: 150px;
+                color: azure;
+                transition:0.5;
+                
+            }
+            .next
+            {
+                right: 0px;
+            }
+            #but:hover
+            {
+              opacity: 50px;
+            }
+        </style>
+          
+
+          <script>
+            
+            
+            let s = 1;
+            slider(s); 
+                function f(n)
+            {
+                slider(s+=n)
+            }
+            function slider(n)
+            {
+                let img = document.getElementsByClassName("img");
+                if (n<1)
+                {
+                    s = img.length;
+                }
+                if(n>img.length)
+            
+              {
+                s = 1;
+              }
+               
+                for (i=0;i<img.length;i++)
+                {
+                  img[i].style.display="none";  
+                }
+                img[s-1].style.display="block";
+            }
+            
+          </script>
+    
+        </body>
+        </html>

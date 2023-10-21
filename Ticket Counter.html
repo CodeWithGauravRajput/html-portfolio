@@ -1,0 +1,64 @@
+<html>
+    <body>
+      <select id="a">
+        <option>BHOLA</option>
+        <option>Raid</option>
+        <option>ADIPURUSH</option>
+        <option>RAVAN</option>
+
+      </select>
+
+
+      <select id="c">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+
+      </select>
+
+
+      <p id="b"> price </p>
+      
+
+
+      <button onclick="quantity()"> click me</button>
+
+      <script>
+
+        function quantity()
+         
+          
+          {
+
+            let x = document.getElementById("a").value;
+            let y = document.getElementById("c").value;
+          
+            if(x=="BHOLA")
+            {
+             document.getElementById("b").innerHTML = y*900;
+            }
+
+            if(x=="RAID")
+            {
+             document.getElementById("b").innerHTML = y*300;
+            }
+
+
+            if(x=="ADIPURUSH")
+            {
+             document.getElementById("b").innerHTML = y*400;
+            }
+
+            if(x=="RAVAN")
+            {
+             document.getElementById("b").innerHTML = y*200;
+            }
+
+                     
+
+          }
+  
+    </script>
+    </body>
+</html>

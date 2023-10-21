@@ -1,0 +1,149 @@
+<html>
+    <body>
+        <header>
+        
+            <div>
+                <a href="#">LOGO</a>
+             
+            </div>
+           <div>            
+                <a href="#">home</a> 
+                <a href="#">service</a>
+                <a href="#">about us</a>
+                <a href="#">men's wear</a>
+                <a href="#">classic</a>
+
+            </div>
+
+            <div>
+                <a href="#">search</a>
+                <a href="#">call us</a>
+                <a href="#">web maker</a>
+
+            </div>
+        
+        </header>
+        <body>
+        <br>
+
+            <section id="z">
+                <div>
+                    <img src="kisspng-t-shirt-hoodie-black-lives-matter-clothing-hoodie-5ab9975e09d5c9.4872239115221123500403.png" width="600px"  >
+                </div>
+
+
+                <div>
+                   <h1> Black hoodie  </h1> 
+
+
+                <P id="a"> RS 500 </p> 
+                    
+                    <br>
+
+
+
+
+                <p>size: </p> 
+                <p id="ol"> M  </p>
+
+
+                <button onclick="h('M')"> M</button>
+                <button onclick="h('l')"> l</button>
+                <button onclick="h('xl')"> xl</button>
+                <button onclick="h('xxl')"> xxl</button>
+                <button onclick="h('xxxl')"> xxxl</button>
+          
+                 <br>
+
+                 <input type="number" id="b" onchange="f()">
+
+                </div> 
+               
+            </section>
+ <br>
+            <footer class="footer">
+                <div class="container">
+                    <p>&copy; A code pen by <a href="https://codepen.io/alpide" class="text-info" target="_blank">Alpide</a></p>
+                </div>
+            </footer>
+    
+            <script>
+
+
+
+                 function f()
+            {
+                let x = document.getElementById("b").value;
+                if(x<1) 
+                {
+                    x=1;
+                    document.getElementById("b").value = x;
+                    
+                }
+
+                document.getElementById("a").innerHTML =   "RS" + x*500;
+
+            }
+
+
+
+            function h(n)
+    {
+       document.getElementById("ol").innerHTML = n;
+           
+    }
+
+            </script>
+        </body>
+
+<style>
+
+    #z
+    {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+       justify-content: space-evenly; 
+    }
+
+
+
+    *
+    {
+        margin: 0px;    
+    }
+    header
+    { 
+        height: 30px;
+        background-color: rgb(0, 0, 0);
+       display: flex;
+       justify-content: space-evenly;
+    }
+    a
+    {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+    }
+h1{
+    padding-top: 150px;
+    padding-right: 120px;
+}
+
+.container {
+  width: 100%;
+  height: 40px;
+  
+  padding-top: 10px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.container p {
+  color: rgba(255, 255, 255, 0.75);
+}
+/*# sourceMappingURL=style.css.map */
+
+</style>
+
+    </body>
+</html>
